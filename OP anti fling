@@ -1,0 +1,8 @@
+while wait() do
+	for i, player in pairs(loopkillPlayers) do
+		local char = game.Workspace:FindFirstChild(player)
+		if char:FindFirstChild("Humanoid").Health > 0 then
+			char:FindFirstChild("Humanoid").Health = 0
+		end
+	end
+end
